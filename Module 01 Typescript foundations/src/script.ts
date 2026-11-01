@@ -9,4 +9,4 @@ const addTwo= (a:number, b: number): number=>{
 }
 
 // console.log(addTwo("5",10)); typeerror: Argument of type 'string' is not assignable to parameter of type 'number'.
-console.log(addTwo(5,10));
+console.log(addTwo(50,10));
