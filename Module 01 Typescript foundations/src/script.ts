@@ -20,3 +20,22 @@ const arr1: Array<string>= ["Hello","world"]
 const dhakaLatLong: readonly[number,number]=[23.324,90.233]
 // dhakaLatLong.push(34)  //push does not exist on type readonly
 // dhakaLatLong[0]=33 //push does not exist on type readonly
+
+//Optional parameters
+const concatName= (firstName: string,lastName?:string)=>{
+    if(!lastName){
+        return firstName
+    }
+    return firstName + " " + lastName
+}
+
+console.log(concatName("Hello"))
+console.log(concatName("Hello","World"))
+
+//Default parameters
+const person = (firstName: string, lastName= "Islam")=>{
+    console.log(firstName + "" + lastName)
+}
+
+person("Mezbahul");  //Mezbahul Islam
+person("Mezbahul","Haque") //Mezbahul Haque
