@@ -57,3 +57,67 @@ const logUserAction =(
 }
 
 logUserAction("Meraz",20,false)
+
+
+//Object formate without object type
+const test:{
+    name:string
+    numb:number
+    isActive: boolean
+    action: ()=>void
+    array1: string[]
+}={
+    name:"Pathan",
+    numb: 22,
+    isActive: true,
+    action:()=>console.log("Hello"),
+    array1: ["abc","def"]
+}
+
+
+//Object type ,type alias and interface
+//type alias
+type Address={
+    District: string
+    houseNo: number
+}
+
+type User={
+    name: string
+    age: number
+    isActive: boolean
+    action: ()=>void
+    badges: string[]
+    address: Address
+}
+
+
+const user: User={
+    name:"Meraz",
+    age:22,
+    isActive: true,
+    action:()=>console.log("Hello"),
+    badges: ["abc","def"],
+    address: {
+        District: "Dhaka",
+        houseNo: 11
+    }
+}
+
+//interface
+interface Iuser{
+    name: string
+    age: number
+    isActive: boolean
+    action: ()=>void
+    badges: string[]
+    
+}
+
+const user2: Iuser={
+    name:"Mezbahul",
+    age:23,
+    isActive: true,
+    action:()=>console.log("Hello"),
+    badges: ["abc","def"]
+}
