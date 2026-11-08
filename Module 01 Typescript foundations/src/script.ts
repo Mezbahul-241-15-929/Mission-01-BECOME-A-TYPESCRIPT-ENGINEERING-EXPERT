@@ -39,3 +39,21 @@ const person = (firstName: string, lastName= "Islam")=>{
 
 person("Mezbahul");  //Mezbahul Islam
 person("Mezbahul","Haque") //Mezbahul Haque
+
+
+//rest parameters
+const sum= (...numbers: number[])=>{
+    return numbers.reduce((total,sum)=>total+sum,0);
+};
+
+//not user widely
+console.log(sum(1,2,3,4,5,6));
+
+const logUserAction =(
+    ...args: [name:string,age:number,isActive: boolean]
+)=>{
+    const [name,age]= args;
+    console.log(name +"is"+age)
+}
+
+logUserAction("Meraz",20,false)
