@@ -45,7 +45,3 @@ const showAddress=(user: user)=>{
     throw new Error("User is null");
 
 }
-//* Equality narrowing
-//* "in" operator narrowing
-//* "instanceof" narrowing
-//* Discriminated union narrowing
