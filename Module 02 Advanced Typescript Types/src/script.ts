@@ -6,3 +6,4 @@ import "./v5-Examples-of-different-types.js";
 import "./v6-Type-Assertion.js";
 import "./v7-Narrowing-down.js";
 import "./v8-Narrowing-continued.js";
+import "./v9-Generic.js";
