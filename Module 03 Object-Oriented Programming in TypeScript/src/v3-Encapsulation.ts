@@ -1,11 +1,11 @@
 //? Encapsulation:
 
-//? Modifier:
-// Public: public name or name
-// private: private name
-//protected
+//? Access Modifier:
+// Public: access from any where | Syntax: public name or name
+// private: access from same class | Syntax: private salary
+//protected: access same class & extend child | Syntax : protected
 
-// readonly: public readonly name
+// readonly: only can read | Syntax: public readonly name 
 
 class Employee {
   constructor(
