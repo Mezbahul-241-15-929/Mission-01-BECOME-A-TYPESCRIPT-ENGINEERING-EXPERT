@@ -1,2 +1,1 @@
-console.log("Hellow World");
-export {};
+import "./v2-class-and-object.js";
